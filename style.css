@@ -1,40 +1,128 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GreenTech – Kontakt</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="logo">🌿 GreenTech</div>
-    <nav>
-      <a href="index.html">O firmie</a>
-      <a href="oferta.html">Oferta</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="kontakt.html" class="active">Kontakt</a>
-    </nav>
-  </header>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f6fff6;
+  color: #333;
+}
 
-  <main>
-    <h1>Skontaktuj się z nami</h1>
-    <form class="contact-form">
-      <label>Imię i nazwisko:
-        <input type="text" placeholder="Twoje imię i nazwisko" required>
-      </label>
-      <label>Email:
-        <input type="email" placeholder="Twój adres email" required>
-      </label>
-      <label>Wiadomość:
-        <textarea placeholder="Treść wiadomości..." rows="5"></textarea>
-      </label>
-      <button type="submit">Wyślij</button>
-    </form>
-  </main>
+header {
+  background-color: #228B22;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
 
-  <footer>
-    <p>&copy; 2025 GreenTech | Projekt: Jan Kowalski</p>
-  </footer>
-</body>
-</html>
+.logo {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  color: #d4ffd4;
+  transform: scale(1.05);
+}
+
+.active {
+  border-bottom: 2px solid white;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.offer-list li {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #228B22;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #32CD32;
+}
+
+footer {
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio {
+    flex-direction: column;
+    align-items: center;
+  }
+}
