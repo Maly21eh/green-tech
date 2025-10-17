@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" class="portfolio">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +8,40 @@
 </head>
 <body>
   <header>
-    <div class="logo">🌿 GreenTech</div>
+    <h2>GreenTech</h2>
+    <div class="logo">
+    <img src="logo.png" alt="Logo firmy">
+  </div>
     <nav>
-      <a href="index.html">O firmie</a>
-      <a href="oferta.html">Oferta</a>
-      <a href="portfolio.html" class="active">Portfolio</a>
-      <a href="kontakt.html">Kontakt</a>
+      <ul>
+        <li><a href="index.html">O firmie</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <h1>Nasze realizacje</h1>
-    <div class="portfolio">
+    <p>Zobacz kilka naszych projektów, które pokazują, jak łączymy nowoczesność z naturą.</p>
+
+    <div class="portfolio-gallery">
       <div class="project">
         <img src="https://via.placeholder.com/300x200" alt="Projekt 1">
         <p>Instalacja solarna – Kraków</p>
       </div>
       <div class="project">
         <img src="https://via.placeholder.com/300x200" alt="Projekt 2">
-        <p>System Smart Home – Warszawa</p>
+        <p>System Smart Home – Łódź</p>
       </div>
       <div class="project">
         <img src="https://via.placeholder.com/300x200" alt="Projekt 3">
-        <p>Farmy fotowoltaiczne – Gdańsk</p>
+        <p>Oświetlenie LED – Katowice</p>
       </div>
     </div>
+
+    <a href="kontakt.html" class="btn">Skontaktuj się z nami</a>
   </main>
 
   <footer>
